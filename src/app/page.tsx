@@ -228,7 +228,7 @@ export default function Home() {
               description={d?.weather[0].description ?? ""}
               weatherIcon={d?.weather[0].icon ?? "01d"}
               date={d ? format(parseISO(d.dt_txt), "dd.MM") : ""}
-              day={d ? format(parseISO(d.dt_txt), "dd.MM") : "EEEE"}
+              day={d ? format(parseISO(d.dt_txt), "eeee") : "EEEE"}
               feels_like={d?.main.feels_like ?? 0}
               temp={d?.main.temp ?? 0}
               temp_max={d?.main.temp_max ?? 0}
